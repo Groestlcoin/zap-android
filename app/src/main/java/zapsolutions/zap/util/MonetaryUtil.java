@@ -51,14 +51,14 @@ public class MonetaryUtil {
         switch (SecondCurrency) {
             case BTC_UNIT:
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    setSecondCurrency(SecondCurrency, 1e-8, "\u20BF");
+                    setSecondCurrency(SecondCurrency, 1e-8, "\u01E4");
                 } else {
                     setSecondCurrency(SecondCurrency, 1e-8);
                 }
                 break;
             case MBTC_UNIT:
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    setSecondCurrency(SecondCurrency, 1e-5, "m\u20BF");
+                    setSecondCurrency(SecondCurrency, 1e-5, "m\u01E4");
                 } else {
                     setSecondCurrency(SecondCurrency, 1e-5);
                 }
