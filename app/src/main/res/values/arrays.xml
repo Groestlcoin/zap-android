@@ -9,14 +9,14 @@
         <item>BTC</item>
         <item>mBTC</item>
         <item>bit</item>
-        <item>sat</item>
+        <item>gro</item>
     </string-array>
 
     <string-array name="btcUnitDisplayValues">
-        <item>(BTC) Bitcoin</item>
-        <item>(mBTC) Milli Bitcoin</item>
-        <item>(bit) Bits</item>
-        <item>(sat) Satoshis</item>
+        <item>(GRS) Groestlcoin</item>
+        <item>(mGRS) Milli Groestlcoin</item>
+        <item>(groestl) Groestls</item>
+        <item>(gro) Gros</item>
     </string-array>
 
     <string-array name="addressType">

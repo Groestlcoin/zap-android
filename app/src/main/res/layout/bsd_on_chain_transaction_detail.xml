@@ -111,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/amountLabel"
         app:layout_constraintTop_toBottomOf="@id/event"
-        tools:text="10 sat" />
+        tools:text="10 gro" />
 
     <TextView
         android:id="@+id/feeLabel"
@@ -134,7 +134,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/dateLabel"
         app:layout_constraintTop_toBottomOf="@+id/amount"
-        tools:text="1 sat" />
+        tools:text="1 gro" />
 
     <TextView
         android:id="@+id/dateLabel"

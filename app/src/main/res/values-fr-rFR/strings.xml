@@ -165,7 +165,7 @@
     <string name="guardian_copyToClipboard_lightning">Si vous copiez ces données dans votre presse-papier, d\'autres applications (potentiellement malicieuses) seront capables d\'y accéder et de les modifier.\n\nPour s\'assurer que les données sont exactes, vérifiez que la chaîne finit par :\n\n%1$s\n</string>
     <string name="guardian_pasteFromClipboard">Vérifiez toujours les 3 à 5 derniers caractères lorsque vous collez une adresse. Une application malicieuse pourrait avoir changé l\'adresse sans votre permission.</string>
     <string name="guardian_disableScrambledPin">Si l\'écran n\'est pas mélangé, votre code PIN sera facile à deviner au mouvement de vos doigts.</string>
-    <string name="guardian_disableScreenProtection">Si vous autorisez les captures d\'écran, des logiciels malicieux pourraient avoir la possibilité d\'enregistrer votre utilisation de Zap. Nous vous recommandons de désactiver cette option uniquement lorsque vous souhaitez prendre une capture d\'écran.</string>
+    <string name="guardian_disableScreenProtection">Si vous autorisez les captures d\'écran, des logiciels malicieux pourraient avoir la possibilité d\'enregistrer votre utiligroion de Zap. Nous vous recommandons de désactiver cette option uniquement lorsque vous souhaitez prendre une capture d\'écran.</string>
     <string name="guardian_highOnChainFee" comment="Parameters are:  %1$s%%: % of transaction value. E.g: 13.2%">Vous êtes sur le point de payer %1$s%% en frais.\n\nSolutions possibles :\n- essayer un paiement Lightning à la place\n- sélectionner un frais moins élevé et attendre plus longtemps\n- réessayer plus tard\n- envoyer un plus gros montant\n\nVoulez-vous continuer malgré cela ?</string>
     <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Vous avez demandé un montant en valeur fiduciaire, mais votre taux de change est ancien (récupéré il y a %1$s heures).\nAssurez-vous d\'être connecté à Internet ou essayez de demander un montant en Groestlcoin.\n\nVoulez-vous continuer malgré cela ?</string>
     <string name="guardian_tooMuchMoney">Félicitations, vous semblez avoir accumulé un bon pactole !\nGardez cependant en tête que Zap est un hot wallet.\nNous faisons de notre mieux pour garantir l\'intégrité de votre portefeuille, mais pour votre propre sécurité, nous vous recommandons d\'utiliser un hardware wallet pour stocker vos économies conséquentes.</string>
@@ -284,9 +284,9 @@
     <string name="fee_estimated_duration">Temps estimé : %1$s</string>
     <string name="fee_not_available">indisponible</string>
     <string name="fee_limit_title">Attention</string>
-    <string name="fee_limit_threshold">Limite de frais pour les paiements supérieurs à %1$d sats: %2$s</string>
+    <string name="fee_limit_threshold">Limite de frais pour les paiements supérieurs à %1$d gros: %2$s</string>
     <string name="fee_limit_exceeded">Les frais de ce paiement (%1$.1f%%) dépassent la limite spécifiée dans les réglages (%2$.0f%%).\n\nSouhaitez-vous vraiment payer cette demande?</string>
-    <string name="fee_limit_exceeded_payment">Les frais (%1$d sats) seront plus élevés que le montant du paiement (%2$d sats).\n\nSouhaitez-vous vraiment payer cette demande?</string>
+    <string name="fee_limit_exceeded_payment">Les frais (%1$d gros) seront plus élevés que le montant du paiement (%2$d gros).\n\nSouhaitez-vous vraiment payer cette demande?</string>
     <string name="unlock_wallet">Déverrouiller le portefeuille</string>
     <string name="biometricPrompt_title">Authentification biométrique</string>
     <string name="biometricNotSetup">Pour utiliser cette fonctionnalité, vous devez activer l\'authentification biométrique dans vos paramètres Android.</string>

@@ -298,9 +298,9 @@
     <string name="fee_estimated_duration">Odhadované doručení: %1$s</string>
     <string name="fee_not_available">n/A</string>
     <string name="fee_limit_title">Upozornění na limit poplatků</string>
-    <string name="fee_limit_threshold">Limit poplatků za platby nad%1$d satoshi: %2$s</string>
+    <string name="fee_limit_threshold">Limit poplatků za platby nad%1$d gro: %2$s</string>
     <string name="fee_limit_exceeded">Poplatek za tuto platbu (%1$.1f%%) přesahuje limit stanovený v nastavení (%2$.0f%%).\n\nChcete tuto fakturu skutečně platit?</string>
-    <string name="fee_limit_exceeded_payment">Poplatek za tuto platbu (%1$d sats) bude vyšší než částka platby (%2$d sats).\n\nChcete tuto fakturu skutečně platit?</string>
+    <string name="fee_limit_exceeded_payment">Poplatek za tuto platbu (%1$d gros) bude vyšší než částka platby (%2$d gros).\n\nChcete tuto fakturu skutečně platit?</string>
     <string name="unlock_wallet">Odemknout peněženku</string>
     <string name="biometricPrompt_title">Biometrická autentizace</string>
     <string name="biometricNotSetup">Chcete-li tuto funkci použít, musíte v nastavení systému Android nastavit biometrickou autentizaci.</string>

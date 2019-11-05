@@ -312,9 +312,9 @@
     <string name="fee_estimated_duration">Estimated Delivery: %1$s</string>
     <string name="fee_not_available">n/A</string>
     <string name="fee_limit_title">Fee Limit Alert</string>
-    <string name="fee_limit_threshold">Fee limit for payments above %1$d sats: %2$s</string>
+    <string name="fee_limit_threshold">Fee limit for payments above %1$d gros: %2$s</string>
     <string name="fee_limit_exceeded">The fee for this payment (%1$.1f%%) exceeds the limit specified in the settings (%2$.0f%%).\n\nDo you really want to pay this invoice?</string>
-    <string name="fee_limit_exceeded_payment">The fee for this payment (%1$d sats) will be higher than the payment amount (%2$d sats).\n\nDo you really want to pay this invoice?</string>
+    <string name="fee_limit_exceeded_payment">The fee for this payment (%1$d gros) will be higher than the payment amount (%2$d gros).\n\nDo you really want to pay this invoice?</string>
     <string name="unlock_wallet">Unlock Wallet</string>
     <string name="biometricPrompt_title">Biometric Authentication</string>
     <string name="biometricNotSetup">In order to use this feature, you have to setup biometric authentication in your Android system settings.</string>

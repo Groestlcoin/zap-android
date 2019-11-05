@@ -286,9 +286,9 @@
     <string name="fee_estimated_duration">Очаквано пристигане: %1$s</string>
     <string name="fee_not_available">N/A</string>
     <string name="fee_limit_title">Предупреждение за Таксата</string>
-    <string name="fee_limit_threshold">Лимит на таксите за плащания над %1$d sats: %2$s</string>
+    <string name="fee_limit_threshold">Лимит на таксите за плащания над %1$d gros: %2$s</string>
     <string name="fee_limit_exceeded">Таксата за това плащане (%1$.1f%%) надвишава лимита, зададен в настройките (%2$.0f%%).\n\nНаистина ли искате да платите тази фактура?</string>
-    <string name="fee_limit_exceeded_payment">Таксата за това плащане (%1$d sats) ще бъде по-висока от самата сумата за плащане (%2$d sats).\n\nНаистина ли искате да платите тази фактура?</string>
+    <string name="fee_limit_exceeded_payment">Таксата за това плащане (%1$d gros) ще бъде по-висока от самата сумата за плащане (%2$d gros).\n\nНаистина ли искате да платите тази фактура?</string>
     <string name="unlock_wallet">Отключете портфейла</string>
     <string name="biometricPrompt_title">Биометрична автентикация</string>
     <string name="biometricNotSetup">За да използвате тази функция трябва да настроите биометричната автентикация в системните настройки на Андроид.</string>

@@ -284,9 +284,9 @@
     <string name="fee_estimated_duration">Geschätzte Dauer: %1$s</string>
     <string name="fee_not_available">n/A</string>
     <string name="fee_limit_title">Gebührenlimit Warnung</string>
-    <string name="fee_limit_threshold">Gebührenlimit für Zahlungen über %1$d sats: %2$s</string>
+    <string name="fee_limit_threshold">Gebührenlimit für Zahlungen über %1$d gros: %2$s</string>
     <string name="fee_limit_exceeded">Die Gebühr für diese Zahlung (%1$.1f%%) übersteigt das eingestellte Limit (%2$.0f%%).\n\nWollen Sie diese Zahlung wirklich durchführen?</string>
-    <string name="fee_limit_exceeded_payment">Die Gebühr für diese Zahlung (%1$d sats) übersteigt den Zahlungsbetrag (%2$d sats).\n\nWollen Sie diese Zahlung wirklich durchführen?</string>
+    <string name="fee_limit_exceeded_payment">Die Gebühr für diese Zahlung (%1$d gros) übersteigt den Zahlungsbetrag (%2$d gros).\n\nWollen Sie diese Zahlung wirklich durchführen?</string>
     <string name="unlock_wallet">Wallet entsperren</string>
     <string name="biometricPrompt_title">Biometrische Authentifizierung</string>
     <string name="biometricNotSetup">Um dieses Feature zu nutzen, musst du erst die biometrische Authentifizierung in den Android Einstellungen einrichten.</string>

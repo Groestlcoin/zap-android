@@ -27,10 +27,10 @@ import java.util.regex.Pattern;
  */
 public class MonetaryUtil {
 
-    private static final String BTC_UNIT = "BTC";
-    private static final String MBTC_UNIT = "mBTC";
-    private static final String BIT_UNIT = "bit";
-    private static final String SATOSHI_UNIT = "sat";
+    private static final String BTC_UNIT = "GRS";
+    private static final String MBTC_UNIT = "mGRS";
+    private static final String BIT_UNIT = "groestl";
+    private static final String SATOSHI_UNIT = "gro";
 
     private static final String LOG_TAG = MonetaryUtil.class.getName();
 
@@ -44,7 +44,7 @@ public class MonetaryUtil {
     private MonetaryUtil() {
         mContext = App.getAppContext();
 
-        loadFirstCurrencyFromPrefs(PrefsUtil.getPrefs().getString("firstCurrency", "sat"));
+        loadFirstCurrencyFromPrefs(PrefsUtil.getPrefs().getString("firstCurrency", "gro"));
 
 
         String SecondCurrency = PrefsUtil.getPrefs().getString("secondCurrency", "USD");
@@ -477,7 +477,7 @@ public class MonetaryUtil {
         // Bitcoin
         if (currency.isBitcoin()) {
 
-            String btcUnit = PrefsUtil.getPrefs().getString("firstCurrency", "sat");
+            String btcUnit = PrefsUtil.getPrefs().getString("firstCurrency", "gro");
             switch (btcUnit) {
                 case BTC_UNIT:
                     numberOfDecimals = 8;

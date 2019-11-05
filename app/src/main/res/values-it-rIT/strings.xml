@@ -165,7 +165,7 @@
     <string name="guardian_copyToClipboard_lightning">Copiando questo dato negli appunti, alcune app (anche malevoli) potrebbero accedervi e modificarlo.\n\nPer essere certi che non sia stato modificato, confronta la fine con:\n\n%1$s\n</string>
     <string name="guardian_pasteFromClipboard">Controlla sempre le ultime 3 o 5 cifre quando incolli dagli appunti. Un\'app dannosa potrebbe aver modificato l\'indirizzo in background senza che te ne accorgessi.</string>
     <string name="guardian_disableScrambledPin">Se non rimescoli, è molto semplice intuire il tuo PIN semplicemente guardando i movimenti delle tue dita.</string>
-    <string name="guardian_disableScreenProtection">Consentendo la registrazione dello schermo, software malevoli potrebbero essere in grado di registrare un video o effettuare screenshot mentre utilizzi Zap. Raccomandiamo di disattivarlo solo mentre vuoi registrare un video o effettuare uno screenshot.</string>
+    <string name="guardian_disableScreenProtection">Consentendo la registrazione dello schermo, software malevoli potrebbero essere in grado di registrare un video o effettuare screenshot mentre utilizzi Zap. Raccomandiamo di digrotivarlo solo mentre vuoi registrare un video o effettuare uno screenshot.</string>
     <string name="guardian_highOnChainFee" comment="Parameters are:  %1$s%%: % of transaction value. E.g: 13.2%">Stai per pagare %1$s%% in tasse di network.\n\nSoluzioni possibili:\n\n- prova un pagamento lightning\n- seleziona tasse minori, attendi di più\n- prova di nuovo più tardi\n- effettua una transazione maggiore\n\nVuoi continuare comunque?</string>
     <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Hai richiesto un importo in valuta fiat, ma i dati sul tasso di cambio non sono aggiornati (recuperate %1$s ore fa).\nAssicurati di essere connesso ad internet o considera di richiedere direttamente in Groestlcoin.\n\nVuoi continuare comunque?</string>
     <string name="guardian_tooMuchMoney">Complimenti, sembra che tu abbia una bella pila di Groestlcoin!\nTieni presente che Zap è un Hot Wallet.\nFacciamo del nostro meglio per mantenere sicuro questo portafoglio, ma per motivi di sicurezza, ti consigliamo di prendere in considerazione Hardware o Cold Wallet per conservare i tuoi maggiori risparmi.</string>
@@ -284,9 +284,9 @@
     <string name="fee_estimated_duration">Consegna stimata: %1$s</string>
     <string name="fee_not_available">n/A</string>
     <string name="fee_limit_title">Fee Limit Alert</string>
-    <string name="fee_limit_threshold">Fee limit for payments above %1$d sats: %2$s</string>
+    <string name="fee_limit_threshold">Fee limit for payments above %1$d gros: %2$s</string>
     <string name="fee_limit_exceeded">The fee for this payment (%1$.1f%%) exceeds the limit specified in the settings (%2$.0f%%).\n\nDo you really want to pay this invoice?</string>
-    <string name="fee_limit_exceeded_payment">The fee for this payment (%1$d sats) will be higher than the payment amount (%2$d sats).\n\nDo you really want to pay this invoice?</string>
+    <string name="fee_limit_exceeded_payment">The fee for this payment (%1$d gros) will be higher than the payment amount (%2$d gros).\n\nDo you really want to pay this invoice?</string>
     <string name="unlock_wallet">Sblocca Wallet</string>
     <string name="biometricPrompt_title">Autenticazione Biometrica</string>
     <string name="biometricNotSetup">Per utilizzare questa funzione, devi configurare l\'autenticazione biometrica nelle impostazioni del tuo sistema Android.</string>
