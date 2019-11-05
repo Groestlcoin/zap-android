@@ -35,7 +35,7 @@
                 <!-- bitcoin and lightning uri scheme -->
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <data android:scheme="bitcoin" />
+                <data android:scheme="groestlcoin" />
                 <data android:scheme="lightning" />
 
             </intent-filter>
