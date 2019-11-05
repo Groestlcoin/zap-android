@@ -155,8 +155,8 @@
     <string name="receive_generateRequest_failed">La solicitud no pudo ser generada.</string>
     <string name="receive_lightning_request">Solicitud Lightning</string>
     <string name="receive_on_chain_request">Solicitud en cadena</string>
-    <string name="receive_noActiveChannels">Para recibir Bitcoin por la red relámpago, debes primero abrir canales.</string>
-    <string name="receive_noIncomeBalance">Para recibir Bitcoin por la red relámpago, por lo menos uno de tus canales necesita algún balance en su contraperte.\n\nPara lograrlo, primero tiene que gastar algo en la red relámpago.\n\nEn el área de administración de canales puedes siempre ver cuanto puedes enviar o recibir por la red relámpago en el presente.</string>
+    <string name="receive_noActiveChannels">Para recibir Groestlcoin por la red relámpago, debes primero abrir canales.</string>
+    <string name="receive_noIncomeBalance">Para recibir Groestlcoin por la red relámpago, por lo menos uno de tus canales necesita algún balance en su contraperte.\n\nPara lograrlo, primero tiene que gastar algo en la red relámpago.\n\nEn el área de administración de canales puedes siempre ver cuanto puedes enviar o recibir por la red relámpago en el presente.</string>
     <string name="receive_requestFullfilled">Solicitud\npagada</string>
     <string name="guardian_doNotShowAgain">No me muestres de nuevo.</string>
     <string name="guardian_Title">Atención</string>
@@ -167,16 +167,16 @@
     <string name="guardian_disableScrambledPin">Sin el mezclado puede resultar mas fácil para un tercero adivinar el PIN solo con observar los movimientos de sus dedos.</string>
     <string name="guardian_disableScreenProtection">Si activas el grabado de pantalla, algún programa malicioso podria grabar un video o tomar capturas de la pantalla mientras usas Zap. Recomendamos que mantengas esto desactivado solo mientras vayas a capturar la pantalla.</string>
     <string name="guardian_highOnChainFee" comment="Parameters are:  %1$s%%: % of transaction value. E.g: 13.2%">Estás a punto de pagar %1$s%% en tarifa de red.\n\nPosibles soluciones:\n- trata de enviar un pago vía lightning\n- selecciona una tarifa menor, espera mas\n- inténtalo mas tarde \n- transacciona con un monto mayor\n\nDeseas continuar de todos modos?</string>
-    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Has solicitado un monto en fíat, pero tu tasa de cambio es antigua (obtenida hace %1$s horas atras).\nAsegúrate de tener conexión a internet o considera la opción de solicitar un monto directamente en Bitcoin.\n\nDeseas continuar de todos modos?</string>
-    <string name="guardian_tooMuchMoney">Felicidades, parece que tienes una buena cantidad de Bitcoin! Por favor recuerda que Zap es una \\"Billetera Caliente\\". Hacemos lo mejor para mantener a la billetera segura, pero por tu propia seguridad, te recomendamos que consideres el uso de Billeteras Frias o en Hardware para almacenar montos considerables.</string>
-    <string name="guardian_notReadyForMainnet">Estas en la MAINNET con Bitcoin de verdad! Zap Android está en una fase muy temprana de desarrollo. Podrias perder fondos! Si no deseas asumir este riesgo, cámbiate a la testnet por mientras.</string>
+    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Has solicitado un monto en fíat, pero tu tasa de cambio es antigua (obtenida hace %1$s horas atras).\nAsegúrate de tener conexión a internet o considera la opción de solicitar un monto directamente en Groestlcoin.\n\nDeseas continuar de todos modos?</string>
+    <string name="guardian_tooMuchMoney">Felicidades, parece que tienes una buena cantidad de Groestlcoin! Por favor recuerda que Zap es una \\"Billetera Caliente\\". Hacemos lo mejor para mantener a la billetera segura, pero por tu propia seguridad, te recomendamos que consideres el uso de Billeteras Frias o en Hardware para almacenar montos considerables.</string>
+    <string name="guardian_notReadyForMainnet">Estas en la MAINNET con Groestlcoin de verdad! Zap Android está en una fase muy temprana de desarrollo. Podrias perder fondos! Si no deseas asumir este riesgo, cámbiate a la testnet por mientras.</string>
     <string name="guardian_remoteConnect">Estás seguro que quieres conectarte con \n\n%1$s\n\n Por favor verifica la dirección con cuidado.</string>
     <string name="guardian_blockExplorer">By looking up information with a Block Explorer your IP-Address gets exposed. If you want to increase your anonymity, you should either not use it or go to the settings and choose a Block Explorer that supports Tor.</string>
     <string name="settings_category_general">General</string>
     <string name="settings_category_security">Seguridad</string>
     <string name="settings_category_help">Ayuda</string>
     <string name="settings_category_advanced">Avanzado</string>
-    <string name="settings_btcUnit">Unidad de Bitcoin</string>
+    <string name="settings_btcUnit">Unidad de Groestlcoin</string>
     <string name="settings_currency">Segunda Unidad</string>
     <string name="settings_language">Idioma</string>
     <string name="settings_hapticPin">Respuesta táctil</string>
@@ -200,7 +200,7 @@
     <string name="settings_enableBiometrics">Autoriza verificación biométrica</string>
     <string name="settings_blockExplorer">Explorador de Bloques</string>
     <string name="settings_blockExplorer_tor_toast">Tor Browser for Android is required.</string>
-    <string name="settings_addressType">Tipo de dirección Bitcoin</string>
+    <string name="settings_addressType">Tipo de dirección Groestlcoin</string>
     <string-array name="settings_receiveAddressDisplayValues">
         <item>Compatible (P2PSH)</item>
         <item>Nativo (Bech32)</item>
@@ -210,7 +210,7 @@
     <string name="error">Error</string>
     <string name="error_blockExplorer_title">Explorador de Bloques</string>
     <string name="error_blockExplorer_message" comment="Parameters are:  %1$s: Name of selected block explorer, %2$s: 'mainnet' or 'testnet'">"El explorador de bloques que tienes actualmente seleccionado (%1$s) no soporta %2$s.\nPor favor ve a las configuraciones y elige otro explorador para continuar."</string>
-    <string name="error_notAPaymentRequest">Datos de pago inválidos.\nUtilice una dirección Bitcoin o una solicitud de pago para Lightning para iniciar la transferencia.</string>
+    <string name="error_notAPaymentRequest">Datos de pago inválidos.\nUtilice una dirección Groestlcoin o una solicitud de pago para Lightning para iniciar la transferencia.</string>
     <string name="error_paymentRequestExpired">Esta solicitud de pago ha expirado.</string>
     <string name="error_useTestnetRequest">Estás conectado a la TESTNET. Por favor usa direcciones y solicitudes de pago para TESTNET.</string>
     <string name="error_useMainnetRequest">Estás conectado a la MAINNET. Por favor usa direcciones o solicitudes de pago para MAINNET.</string>

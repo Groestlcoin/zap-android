@@ -167,16 +167,16 @@
     <string name="guardian_disableScrambledPin">Si l\'écran n\'est pas mélangé, votre code PIN sera facile à deviner au mouvement de vos doigts.</string>
     <string name="guardian_disableScreenProtection">Si vous autorisez les captures d\'écran, des logiciels malicieux pourraient avoir la possibilité d\'enregistrer votre utilisation de Zap. Nous vous recommandons de désactiver cette option uniquement lorsque vous souhaitez prendre une capture d\'écran.</string>
     <string name="guardian_highOnChainFee" comment="Parameters are:  %1$s%%: % of transaction value. E.g: 13.2%">Vous êtes sur le point de payer %1$s%% en frais.\n\nSolutions possibles :\n- essayer un paiement Lightning à la place\n- sélectionner un frais moins élevé et attendre plus longtemps\n- réessayer plus tard\n- envoyer un plus gros montant\n\nVoulez-vous continuer malgré cela ?</string>
-    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Vous avez demandé un montant en valeur fiduciaire, mais votre taux de change est ancien (récupéré il y a %1$s heures).\nAssurez-vous d\'être connecté à Internet ou essayez de demander un montant en Bitcoin.\n\nVoulez-vous continuer malgré cela ?</string>
+    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Vous avez demandé un montant en valeur fiduciaire, mais votre taux de change est ancien (récupéré il y a %1$s heures).\nAssurez-vous d\'être connecté à Internet ou essayez de demander un montant en Groestlcoin.\n\nVoulez-vous continuer malgré cela ?</string>
     <string name="guardian_tooMuchMoney">Félicitations, vous semblez avoir accumulé un bon pactole !\nGardez cependant en tête que Zap est un hot wallet.\nNous faisons de notre mieux pour garantir l\'intégrité de votre portefeuille, mais pour votre propre sécurité, nous vous recommandons d\'utiliser un hardware wallet pour stocker vos économies conséquentes.</string>
-    <string name="guardian_notReadyForMainnet">Vous êtes sur le réseau Mainnet, avec de vrais bitcoin !\nZap Android est en phase de développement précoce, vous risquez de perdre des fonds !\n\nSi vous ne souhaitez pas prendre ce risque, basculez sur le réseau Testnet à la place.</string>
+    <string name="guardian_notReadyForMainnet">Vous êtes sur le réseau Mainnet, avec de vrais Groestlcoin !\nZap Android est en phase de développement précoce, vous risquez de perdre des fonds !\n\nSi vous ne souhaitez pas prendre ce risque, basculez sur le réseau Testnet à la place.</string>
     <string name="guardian_remoteConnect">Êtes-vous sûr de vouloir vous connecter à \n\n%1$s\n\nVeuillez vérifier cet hôte avec prudence.</string>
     <string name="guardian_blockExplorer">En consultant des informations sur un explorateur de blocs, votre adresse IP est dévoilée. Si vous souhaitez préserver votre anonymat, vous ne devriez par en utiliser un, ou en utiliser un qui prend en charge Tor.</string>
     <string name="settings_category_general">Réglages généraux</string>
     <string name="settings_category_security">Sécurité</string>
     <string name="settings_category_help">Aide</string>
     <string name="settings_category_advanced">Réglages avancés</string>
-    <string name="settings_btcUnit">Unité du Bitcoin</string>
+    <string name="settings_btcUnit">Unité du Groestlcoin</string>
     <string name="settings_currency">Unité secondaire</string>
     <string name="settings_language">Langue</string>
     <string name="settings_hapticPin">Retour tactile du code PIN</string>
@@ -200,7 +200,7 @@
     <string name="settings_enableBiometrics">Activer l\'authentification biométrique</string>
     <string name="settings_blockExplorer">Explorateur de blocs</string>
     <string name="settings_blockExplorer_tor_toast">Tor Browser pour Android est requis.</string>
-    <string name="settings_addressType">Type d’adresse Bitcoin</string>
+    <string name="settings_addressType">Type d’adresse Groestlcoin</string>
     <string-array name="settings_receiveAddressDisplayValues">
         <item>Compatibilité (P2PSH)</item>
         <item>Native (Bech32)</item>
@@ -210,7 +210,7 @@
     <string name="error">Erreur</string>
     <string name="error_blockExplorer_title">Explorateur de blocs</string>
     <string name="error_blockExplorer_message" comment="Parameters are:  %1$s: Name of selected block explorer, %2$s: 'mainnet' or 'testnet'">"L'explorateur de blocs sélectionné (%1$s) ne supporte pas %2$s. \nVeuillez sélectionner un autre explorateur de blocs dans les Réglages pour continuer."</string>
-    <string name="error_notAPaymentRequest">Information de paiement invalide.\n\nVeuillez utiliser une adresse Bitcoin ou une demande de paiement Lightning pour initier un paiement.</string>
+    <string name="error_notAPaymentRequest">Information de paiement invalide.\n\nVeuillez utiliser une adresse Groestlcoin ou une demande de paiement Lightning pour initier un paiement.</string>
     <string name="error_paymentRequestExpired">Cette demande de paiement a expiré.</string>
     <string name="error_useTestnetRequest">Vous êtes connecté au réseau Testnet. Merci d\'utiliser des adresses et des demandes de paiement adaptées au réseau Testnet.</string>
     <string name="error_useMainnetRequest">Vous êtes connecté au réseau Mainnet. Merci d\'utiliser des adresses et des demandes de paiement adaptées au réseau Mainnet.</string>
@@ -230,7 +230,7 @@
     <string name="error_connection_lnd_unavailable">Impossible de se connecter à lnd.\n\n- Assurez-vous que le daemon lnd soit actif sur votre serveur.\n\n- Assurez-vous que la redirection des ports soit active (Port : %1$s).\n\n- Assurez-vous que le certificat soit valide.</string>
     <string name="error_connection_wallet_locked">Veuillez déverrouiller le portefeuille.</string>
     <string name="error_connection_btcpay_invalid_json">La syntaxe JSON de la configuration du serveur BTCPay est invalide.</string>
-    <string name="error_connection_btcpay_invalid_config">La configuration du serveur BTCPay ne spécifie pas de configuration gRPC pour Bitcoin.</string>
+    <string name="error_connection_btcpay_invalid_config">La configuration du serveur BTCPay ne spécifie pas de configuration gRPC pour Groestlcoin.</string>
     <string name="error_wrong_password">Mauvais mot de passe</string>
     <string name="error_lightning_uri_invalid">Format invalide.\nVeuillez utiliser le format suivant :\n- PubKey\n- PubKey@hôte\n- PubKey@hôte:port</string>
     <string name="error_channel_open_wallet_setup">Le portefeuille doit être configuré avant d\'ouvrir un canal.</string>

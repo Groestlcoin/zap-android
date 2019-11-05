@@ -155,8 +155,8 @@
     <string name="receive_generateRequest_failed">فشل إنشاء الطلب.</string>
     <string name="receive_lightning_request">طلب Lightning</string>
     <string name="receive_on_chain_request">طلب On-Chain</string>
-    <string name="receive_noActiveChannels">لتلقي Bitcoin عبر شبكة Lightning ، عليك أولاً فتح القنوات.</string>
-    <string name="receive_noIncomeBalance">لاستقبال Bitcoin عبر شبكة Lightning, من جانب الطرف المقابل تحتاج قناة واحدة على الأقل إلى بعض الرصيد.\n\n لتحقيق ذلك, عليك ان تنفق شيئا على شبكة Lightning أولا. \n\n في منطقة إدارة القنوات يمكنك ان ترى دائما كم انت قادرا على إرسال أو استقبال عبر الشبكة lightning في الوقت الحالي.</string>
+    <string name="receive_noActiveChannels">لتلقي Groestlcoin عبر شبكة Lightning ، عليك أولاً فتح القنوات.</string>
+    <string name="receive_noIncomeBalance">لاستقبال Groestlcoin عبر شبكة Lightning, من جانب الطرف المقابل تحتاج قناة واحدة على الأقل إلى بعض الرصيد.\n\n لتحقيق ذلك, عليك ان تنفق شيئا على شبكة Lightning أولا. \n\n في منطقة إدارة القنوات يمكنك ان ترى دائما كم انت قادرا على إرسال أو استقبال عبر الشبكة lightning في الوقت الحالي.</string>
     <string name="receive_requestFullfilled">فاتورة\nمدفوعة</string>
     <string name="guardian_doNotShowAgain">لا تظهر مرة أخرى.</string>
     <string name="guardian_Title">انتباه</string>
@@ -167,16 +167,16 @@
     <string name="guardian_disableScrambledPin">إذا لم يتم الخلط، فمن السهل تخمين رقم المرور السري \"PIN\" الخاص بك فقط من خلال مشاهدة حركات إصبعك.</string>
     <string name="guardian_disableScreenProtection">إذا سمحت بتسجيل الشاشة، فقد تتمكن البرامج الضارة من تسجيل مقطع فيديو أو التقاط لقطات أثناء استخدام Zap. نوصي بإلغاء تنشيط هذا فقط بينما تريد تسجيل مقطع فيديو أو التقاط لقطة شاشة.</string>
     <string name="guardian_highOnChainFee" comment="Parameters are:  %1$s%%: % of transaction value. E.g: 13.2%">You are about to pay %1$s%% in network fees.\n\nPossible solutions:\n- try a lightning payment instead\n- select lower fee, wait longer\n- try again later\n- transact a bigger amount\n\nDo you want to continue anyway?</string>
-    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">You requested an amount as fiat value, but your exchange rate data is old (retrieved %1$s hours ago).\nMake sure you have an internet connection or consider requesting directly in Bitcoin.\n\nDo you want to continue anyway?</string>
-    <string name="guardian_tooMuchMoney">Congratulations, you seem to have a nice stack of Bitcoin!\nPlease keep in mind that Zap is a Hot Wallet.\nWe do our best to keep this wallet secure, but for your own security sake, we recommend you consider Cold Wallets or Hardware Wallets to store your major savings.</string>
-    <string name="guardian_notReadyForMainnet">You are on MAINNET with real Bitcoin!\nZap Android is in early development phase. You might lose funds!\n\nIf you don\'t want to take that risk, switch to testnet in the meantime.</string>
+    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">You requested an amount as fiat value, but your exchange rate data is old (retrieved %1$s hours ago).\nMake sure you have an internet connection or consider requesting directly in Groestlcoin.\n\nDo you want to continue anyway?</string>
+    <string name="guardian_tooMuchMoney">Congratulations, you seem to have a nice stack of Groestlcoin!\nPlease keep in mind that Zap is a Hot Wallet.\nWe do our best to keep this wallet secure, but for your own security sake, we recommend you consider Cold Wallets or Hardware Wallets to store your major savings.</string>
+    <string name="guardian_notReadyForMainnet">You are on MAINNET with real Groestlcoin!\nZap Android is in early development phase. You might lose funds!\n\nIf you don\'t want to take that risk, switch to testnet in the meantime.</string>
     <string name="guardian_remoteConnect">Are you sure you want to connect to \n\n%1$s\n\nPlease check the hostname carefully.</string>
     <string name="guardian_blockExplorer">من خلال البحث عن المعلومات باستخدام Block Explorer، يتم كشف عنوان IP الخاص بك. إذا كنت ترغب في زيادة عدم الكشف عن هويتك ، يجب عليك إما عدم استخدامه أو الانتقال إلى الإعدادات واختيار Block Explorer الذي يدعم Tor.</string>
     <string name="settings_category_general">عام</string>
     <string name="settings_category_security">حماية</string>
     <string name="settings_category_help">مساعدة</string>
     <string name="settings_category_advanced">إعدادات متقدمة</string>
-    <string name="settings_btcUnit">وحدة Bitcoin</string>
+    <string name="settings_btcUnit">وحدة Groestlcoin</string>
     <string name="settings_currency">الوحدة الثانية</string>
     <string name="settings_language">اللغة</string>
     <string name="settings_hapticPin">ردة فعل ملموسة للـ PIN</string>
@@ -200,7 +200,7 @@
     <string name="settings_enableBiometrics">Enable biometric authentication</string>
     <string name="settings_blockExplorer">Block Explorer</string>
     <string name="settings_blockExplorer_tor_toast">Tor Browser for Android is required.</string>
-    <string name="settings_addressType">Bitcoin Address Type</string>
+    <string name="settings_addressType">Groestlcoin Address Type</string>
     <string-array name="settings_receiveAddressDisplayValues">
         <item>Compatibility (P2PSH)</item>
         <item>Native (Bech32)</item>
@@ -210,7 +210,7 @@
     <string name="error">Error</string>
     <string name="error_blockExplorer_title">Block Explorer</string>
     <string name="error_blockExplorer_message" comment="Parameters are:  %1$s: Name of selected block explorer, %2$s: 'mainnet' or 'testnet'">"Your currently selected block explorer (%1$s) does not support %2$s. \nPlease go to settings and choose another block explorer to continue."</string>
-    <string name="error_notAPaymentRequest">Invalid payment information.\n\nPlease use a Bitcoin address or Lightning payment request to initiate a payment.</string>
+    <string name="error_notAPaymentRequest">Invalid payment information.\n\nPlease use a Groestlcoin address or Lightning payment request to initiate a payment.</string>
     <string name="error_paymentRequestExpired">This payment request expired.</string>
     <string name="error_useTestnetRequest">You are connected to TESTNET. Please use TESTNET addresses or payment requests.</string>
     <string name="error_useMainnetRequest">You are connected to MAINNET. Please use MAINNET addresses or payment requests.</string>

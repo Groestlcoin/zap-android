@@ -155,8 +155,8 @@
     <string name="receive_generateRequest_failed">Generování požadavku se nezdařilo.</string>
     <string name="receive_lightning_request">Lightning požadavek</string>
     <string name="receive_on_chain_request">On-Chain požadavek</string>
-    <string name="receive_noActiveChannels">Abyste mohli přijímat bitcoiny přes lightning network, musíte nejprve otevřít kanály.</string>
-    <string name="receive_noIncomeBalance">Chcete-li přijímat bitcoiny přes lightning network, alespoň jeden z vašich kanálů potřebuje určitý zůstatek u protistrany.\n\nChcete-li toho dosáhnout, musíte nejprve něco v lightning network utratit.\n\nV sekci správy kanálů se můžete vždy podívejte, kolik jste nyní schopni odesílat nebo přijímat prostřednictvím lightning network.</string>
+    <string name="receive_noActiveChannels">Abyste mohli přijímat Groestlcoiny přes lightning network, musíte nejprve otevřít kanály.</string>
+    <string name="receive_noIncomeBalance">Chcete-li přijímat Groestlcoiny přes lightning network, alespoň jeden z vašich kanálů potřebuje určitý zůstatek u protistrany.\n\nChcete-li toho dosáhnout, musíte nejprve něco v lightning network utratit.\n\nV sekci správy kanálů se můžete vždy podívejte, kolik jste nyní schopni odesílat nebo přijímat prostřednictvím lightning network.</string>
     <string name="receive_requestFullfilled">Faktura\nplacená</string>
     <string name="guardian_doNotShowAgain">Nezobrazovat znovu.</string>
     <string name="guardian_Title">Pozor</string>
@@ -167,16 +167,16 @@
     <string name="guardian_disableScrambledPin">Pokud není zamíchán, je snadné uhádnout svůj PIN pouhým sledováním pohybů prstu.</string>
     <string name="guardian_disableScreenProtection">Pokud povolíte nahrávání obrazovky, může být škodlivý software schopen nahrávat video nebo pořizovat snímky obrazovky, když používáte Zap. Doporučujeme deaktivovat pouze v případě, že chcete nahrát video nebo pořídit snímek obrazovky.</string>
     <string name="guardian_highOnChainFee" comment="Parameters are:  %1$s%%: % of transaction value. E.g: 13.2%">Chystáte se zaplatit %1$s%% v síťových poplatcích.\n\nMožná řešení:\n- zkuste místo toho Lightning platbu\n- vyberte nižší poplatek, počkejte déle\n- zkuste znovu později\n- převeďte větší množství\n\nChcete přesto pokračovat?</string>
-    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Částku jste požadovali jako hodnotu fiat, ale vaše data směnného kurzu jsou stará (načtena před%1$s hodinami).\nUjistěte se, že máte připojení k internetu nebo zvažte žádost přímo v bitcoinech.\n\nChcete přesto pokračovat?</string>
-    <string name="guardian_tooMuchMoney">Gratulujeme, zdá se, že máte pěknou hromádku bitcoinů!\nMějte na paměti, že Zap je Hot peněženka.\nSnažíme se udržet tuto peněženku v bezpečí, ale pro vaši vlastní bezpečnost doporučujeme zvážit Cold peněženky nebo hardwarové peněženky pro ukládání vašich hlavních úspor.</string>
-    <string name="guardian_notReadyForMainnet">Jste na MAINNETu se skutečnými bitcoiny!\nZap Android je v počáteční fázi vývoje. Můžete ztratit finanční prostředky!\n\nPokud toto riziko nechcete podstoupit, mezitím přepněte na testovací síť.</string>
+    <string name="guardian_oldExchangeRate" comment="Parameters are:  %1$s: Number of hours. E.g: 7.5">Částku jste požadovali jako hodnotu fiat, ale vaše data směnného kurzu jsou stará (načtena před%1$s hodinami).\nUjistěte se, že máte připojení k internetu nebo zvažte žádost přímo v Groestlcoinech.\n\nChcete přesto pokračovat?</string>
+    <string name="guardian_tooMuchMoney">Gratulujeme, zdá se, že máte pěknou hromádku Groestlcoinů!\nMějte na paměti, že Zap je Hot peněženka.\nSnažíme se udržet tuto peněženku v bezpečí, ale pro vaši vlastní bezpečnost doporučujeme zvážit Cold peněženky nebo hardwarové peněženky pro ukládání vašich hlavních úspor.</string>
+    <string name="guardian_notReadyForMainnet">Jste na MAINNETu se skutečnými Groestlcoiny!\nZap Android je v počáteční fázi vývoje. Můžete ztratit finanční prostředky!\n\nPokud toto riziko nechcete podstoupit, mezitím přepněte na testovací síť.</string>
     <string name="guardian_remoteConnect">Opravdu se chcete připojit k \n\n%1$s\n\nProsím pečlivě zkontrolujte název hostitele.</string>
     <string name="guardian_blockExplorer">Vyhledáním informací pomocí aplikace Block Explorer se vaše IP adresa odhalí. Pokud chcete zvýšit anonymitu, neměli byste ji používat, nebo přejděte na nastavení a vyberte Průzkumník bloků, který podporuje Tor.</string>
     <string name="settings_category_general">Obecné</string>
     <string name="settings_category_security">Zabezpečení</string>
     <string name="settings_category_help">Pomoc</string>
     <string name="settings_category_advanced">Pokročilé</string>
-    <string name="settings_btcUnit">Bitcoin jednotka</string>
+    <string name="settings_btcUnit">Groestlcoin jednotka</string>
     <string name="settings_currency">Sekundární jednotka</string>
     <string name="settings_language">Jazyk</string>
     <string name="settings_hapticPin">Hmatová zpětná vazba PIN</string>
@@ -200,7 +200,7 @@
     <string name="settings_enableBiometrics">Povolit biometrickou autentizaci</string>
     <string name="settings_blockExplorer">Blok Explorer</string>
     <string name="settings_blockExplorer_tor_toast">Je vyžadován prohlížeč Tor pro Android.</string>
-    <string name="settings_addressType">Typ adresy bitcoinů</string>
+    <string name="settings_addressType">Typ adresy Groestlcoinů</string>
     <string-array name="settings_receiveAddressDisplayValues">
         <item>Kompatibilita (P2PSH)</item>
         <item>Nativní (Bech32)</item>
@@ -210,7 +210,7 @@
     <string name="error">Chyba</string>
     <string name="error_blockExplorer_title">Blok Explorer</string>
     <string name="error_blockExplorer_message" comment="Parameters are:  %1$s: Name of selected block explorer, %2$s: 'mainnet' or 'testnet'">"Váš aktuálně vybraný průzkumník bloků (%1$s) nepodporuje %2$s. \nPřejděte na nastavení a pokračujte volbou jiného průzkumníku bloků."</string>
-    <string name="error_notAPaymentRequest">Neplatné informace o platbě.\n\nNa zahájení platby použijte bitcoinovou adresu nebo Lightning.</string>
+    <string name="error_notAPaymentRequest">Neplatné informace o platbě.\n\nNa zahájení platby použijte Groestlcoinovou adresu nebo Lightning.</string>
     <string name="error_paymentRequestExpired">Tato platební žádost vypršela.</string>
     <string name="error_useTestnetRequest">Jste připojeni k TESTNETu. Použijte adresy nebo žádosti o platbu TESTNETu.</string>
     <string name="error_useMainnetRequest">Jste připojeni k MAINNETu. Použijte adresy nebo žádosti o platbu MAINNETu.</string>
