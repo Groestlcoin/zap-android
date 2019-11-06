@@ -34,29 +34,17 @@ public class BlockExplorer implements UserGuardianInterface {
         misNetworkSupported = true;
 
         switch (explorer) {
-            case "BlockCypher":
-                networkID = isMainnet ? "btc" : "btc-testnet";
-                mUrl = "https://live.blockcypher.com/" + networkID + "/tx/" + transactionID;
+            case "Chainz":
+                networkID = isMainnet ? "grs" : "grs-test";
+                mUrl = "https://chainz.cryptoid.info/" + networkID + "/tx.dws?" + transactionID;
                 break;
-            case "Blockstream":
-                networkID = isMainnet ? "" : "testnet/";
-                mUrl = "https://blockstream.info/" + networkID + "tx/" + transactionID;
+            case "Groestlsight":
+                networkID = isMainnet ? "" : "-test";
+                mUrl = "https://groestlsight" + networkID + ".groestlcoin.org/tx/" + transactionID;
                 break;
-            case "Blockstream (v3 Tor)":
-                networkID = isMainnet ? "" : "testnet/";
-                mUrl = "http://explorerzydxu5ecjrkwceayqybizmpjjznk5izmitf2modhcusuqlid.onion/" + networkID + "tx/" + transactionID;
-                break;
-            case "Smartbit":
-                networkID = isMainnet ? "www" : "testnet";
-                mUrl = "https://" + networkID + ".smartbit.com.au/tx/" + transactionID;
-                break;
-            case "Blockchain Reader (Yogh)":
-                misNetworkSupported = isMainnet;
-                mUrl = "http://srv1.yogh.io/#tx:id:" + transactionID;
-                break;
-            case "OXT":
-                misNetworkSupported = isMainnet;
-                mUrl = "https://oxt.me/transaction/" + transactionID;
+            case "Blockbook":
+                networkID = isMainnet ? "" : "-test";
+                mUrl = "https://blockbook" + networkID + ".groestlcoin.org/tx/" + transactionID;
                 break;
         }
 
