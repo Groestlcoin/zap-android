@@ -6,9 +6,9 @@
     </string-array>
 
     <string-array name="btcUnit">
-        <item>BTC</item>
-        <item>mBTC</item>
-        <item>bit</item>
+        <item>GRS</item>
+        <item>mGRS</item>
+        <item>groestl</item>
         <item>gro</item>
     </string-array>
 
