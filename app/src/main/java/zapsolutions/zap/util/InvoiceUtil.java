@@ -5,9 +5,9 @@ import androidx.annotation.NonNull;
 public class InvoiceUtil {
 
     public static String URI_PREFIX_LIGHTNING = "lightning:";
-    public static String URI_PREFIX_BITCOIN = "bitcoin:";
-    public static String INVOICE_PREFIX_LIGHTNING_TESTNET = "lntb";
-    public static String INVOICE_PREFIX_LIGHTNING_MAINNET = "lnbc";
+    public static String URI_PREFIX_BITCOIN = "groestlcoin:";
+    public static String INVOICE_PREFIX_LIGHTNING_TESTNET = "lntgrs";
+    public static String INVOICE_PREFIX_LIGHTNING_MAINNET = "lngrs";
     private static int INVOICE_LIGHTNING_MIN_LENGTH = 4;
 
     public static String generateLightningUri(@NonNull String data) {
