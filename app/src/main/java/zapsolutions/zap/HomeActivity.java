@@ -22,8 +22,13 @@ import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 import androidx.lifecycle.ProcessLifecycleOwner;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.api.Http;
+
 import zapsolutions.zap.baseClasses.App;
 import zapsolutions.zap.baseClasses.BaseAppCompatActivity;
 import zapsolutions.zap.connection.HttpClient;
@@ -128,18 +133,42 @@ public class HomeActivity extends BaseAppCompatActivity implements LifecycleObse
 
         if (!mIsExchangeRateSchedulerRunning) {
             mIsExchangeRateSchedulerRunning = true;
+            final JsonObjectRequest requestGRS = MonetaryUtil.getInstance().getExchangeRatesGRS();
             final JsonObjectRequest request = MonetaryUtil.getInstance().getExchangeRates();
 
             mExchangeRateScheduler =
                     Executors.newSingleThreadScheduledExecutor();
 
-            mExchangeRateScheduler.scheduleAtFixedRate
+            float grsPrice = PrefsUtil.getPrefs().getFloat("GRS_BTC", 0.0f);
+            if(grsPrice == 0.0f) {
+                HttpClient.getInstance().getRequestQueue().addRequestFinishedListener(new RequestQueue.RequestFinishedListener<Object>() {
+                    @Override
+                    public void onRequestFinished(Request<Object> request) {
+                        mExchangeRateScheduler.scheduleAtFixedRate
+                                (new Runnable() {
+                                    public void run() {
+                                        if (!MonetaryUtil.getInstance().getSecondCurrency().isBitcoin() ||
+                                                !PrefsUtil.getPrefs().contains(PrefsUtil.AVAILABLE_FIAT_CURRENCIES)) {
+                                            ZapLog.debug(LOG_TAG, "Fiat exchange rate request initiated");
+                                            // Adding request to request queue
+                                            HttpClient.getInstance().addToRequestQueue(MonetaryUtil.getInstance().getExchangeRates(), "rateRequest");
+                                            HttpClient.getInstance().addToRequestQueue(MonetaryUtil.getInstance().getExchangeRatesGRS(), "rateRequestGRS");
+                                        }
+                                    }
+                                }, 0, 3, TimeUnit.MINUTES);
+                        HttpClient.getInstance().getRequestQueue().removeRequestFinishedListener(this);
+                    }
+                });
+                HttpClient.getInstance().addToRequestQueue(requestGRS, "rateRequestGRS");
+            }
+            else mExchangeRateScheduler.scheduleAtFixedRate
                     (new Runnable() {
                         public void run() {
                             if (!MonetaryUtil.getInstance().getSecondCurrency().isBitcoin() ||
                                     !PrefsUtil.getPrefs().contains(PrefsUtil.AVAILABLE_FIAT_CURRENCIES)) {
                                 ZapLog.debug(LOG_TAG, "Fiat exchange rate request initiated");
                                 // Adding request to request queue
+                                HttpClient.getInstance().addToRequestQueue(requestGRS, "rateRequestGRS");
                                 HttpClient.getInstance().addToRequestQueue(request, "rateRequest");
                             }
                         }

@@ -741,9 +741,16 @@ public class MonetaryUtil {
                     @Override
                     public void onResponse(JSONObject response) {
 
+                        if(grsPriceInBTC == null) {
+                            float value =  PrefsUtil.getPrefs().getFloat("GRS_BTC", 0.0f);
+                            if (value == 0.0)
+                                return;
+                            grsPriceInBTC = (double)value;
+                        }
                         final SharedPreferences.Editor editor = PrefsUtil.edit();
 
-                        // JSON Object that will hold all available currencies to later populate selection list.
+
+                            // JSON Object that will hold all available currencies to later populate selection list.
                         JSONObject availableCurrencies = new JSONObject();
 
                         JSONArray availableCurrenciesArray = new JSONArray();
@@ -755,14 +762,14 @@ public class MonetaryUtil {
                             try {
                                 JSONObject ReceivedCurrency = response.getJSONObject(fiatCode);
                                 JSONObject FiatCurrency = new JSONObject();
-                                FiatCurrency.put("rate", ReceivedCurrency.getDouble("15m") / 1e8);
+                                FiatCurrency.put("rate", ReceivedCurrency.getDouble("15m") / 1e8 * grsPriceInBTC);
                                 FiatCurrency.put("symbol", ReceivedCurrency.getString("symbol"));
                                 FiatCurrency.put("timestamp", System.currentTimeMillis() / 1000);
                                 editor.putString("fiat_" + fiatCode, FiatCurrency.toString());
                                 availableCurrenciesArray.put(fiatCode);
                                 // Update the current fiat currency of the Monetary util
                                 if (fiatCode.equals(PrefsUtil.getPrefs().getString("secondCurrency", "USD"))) {
-                                    setSecondCurrency(fiatCode, ReceivedCurrency.getDouble("15m") / 1e8, System.currentTimeMillis() / 1000, ReceivedCurrency.getString("symbol"));
+                                    setSecondCurrency(fiatCode, ReceivedCurrency.getDouble("15m") / 1e8 * grsPriceInBTC, System.currentTimeMillis() / 1000, ReceivedCurrency.getString("symbol"));
                                 }
                             } catch (JSONException e) {
                                 ZapLog.debug(LOG_TAG, "Unable to decode currency from fiat exchange rate request");
@@ -808,7 +815,50 @@ public class MonetaryUtil {
 
         return rateRequest;
     }
+    public static final String BITTREX_EXCHANGE_URL = "https://bittrex.com/api/v1.1/public/getmarkethistory?market=BTC-GRS&count=25";
 
+    private Double grsPriceInBTC = null;
+    public JsonObjectRequest getExchangeRatesGRS() {
+
+        // Creating request
+        JsonObjectRequest rateRequest = new JsonObjectRequest(Request.Method.GET, BITTREX_EXCHANGE_URL, null,
+                new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+
+                        final SharedPreferences.Editor editor = PrefsUtil.edit();
+
+                        try {
+
+                            JSONArray recenttrades = response.getJSONArray("result");
+
+                            double btcTraded = 0.0;
+                            double coinTraded = 0.0;
+
+                            for (int i = 0; i < recenttrades.length(); ++i) {
+                                JSONObject trade = (JSONObject) recenttrades.get(i);
+
+                                btcTraded += trade.getDouble("Total");
+                                coinTraded += trade.getDouble("Quantity");
+
+                            }
+
+                            grsPriceInBTC = btcTraded / coinTraded;
+                        } catch (JSONException x) {
+                            grsPriceInBTC = null;
+                        }
+
+                        editor.putFloat("GRS_BTC", (float)(double)grsPriceInBTC);
+                        editor.apply();
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                ZapLog.debug(LOG_TAG, "Fiat exchange rate request failed");
+            }
+        });
+        return rateRequest;
+    }
 
     // Event handling to notify all registered listeners to an exchange rate change.
 
