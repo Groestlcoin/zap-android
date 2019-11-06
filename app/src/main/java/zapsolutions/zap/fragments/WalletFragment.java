@@ -328,9 +328,9 @@ public class WalletFragment extends Fragment implements SharedPreferences.OnShar
             }
 
             if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                rate = "1 \u20BF ≈ " + rate;
+                rate = "1 \u01E4 ≈ " + rate;
             } else {
-                rate = "1 BTC ≈ " + rate;
+                rate = "1 GRS ≈ " + rate;
             }
 
             mTvBtcRate.setText(rate);

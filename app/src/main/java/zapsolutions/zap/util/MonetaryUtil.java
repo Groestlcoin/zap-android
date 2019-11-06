@@ -193,14 +193,14 @@ public class MonetaryUtil {
         switch (currencyCode) {
             case BTC_UNIT:
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    setFirstCurrency(currencyCode, 1e-8, "\u20BF");
+                    setFirstCurrency(currencyCode, 1e-8, "\u01E4");
                 } else {
                     setFirstCurrency(currencyCode, 1e-8);
                 }
                 break;
             case MBTC_UNIT:
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    setFirstCurrency(currencyCode, 1e-8, "m\u20BF");
+                    setFirstCurrency(currencyCode, 1e-8, "m\u01E4");
                 } else {
                     setFirstCurrency(currencyCode, 1e-8);
                 }
@@ -227,14 +227,14 @@ public class MonetaryUtil {
         switch (currencyCode) {
             case BTC_UNIT:
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    setSecondCurrency(currencyCode, 1e-8, "\u20BF");
+                    setSecondCurrency(currencyCode, 1e-8, "\u01E4");
                 } else {
                     setSecondCurrency(currencyCode, 1e-8);
                 }
                 break;
             case MBTC_UNIT:
                 if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    setSecondCurrency(currencyCode, 1e-8, "m\u20BF");
+                    setSecondCurrency(currencyCode, 1e-8, "m\u01E4");
                 } else {
                     setSecondCurrency(currencyCode, 1e-8);
                 }
