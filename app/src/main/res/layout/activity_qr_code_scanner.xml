@@ -42,11 +42,11 @@
             android:textAllCaps="false"
             android:textColor="@color/lightningOrange"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@id/scannerHelp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <Button
+        <!--Button
             android:id="@+id/scannerHelp"
             android:layout_width="@dimen/qr_scanner_button_width"
             android:layout_height="@dimen/qr_scanner_button_height"
@@ -60,7 +60,7 @@
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" /-->
 
         <ImageButton
             android:id="@+id/scannerFlashButton"

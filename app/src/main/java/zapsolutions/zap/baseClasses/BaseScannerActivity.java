@@ -72,8 +72,8 @@ public abstract class BaseScannerActivity extends BaseAppCompatActivity implemen
         mButtonPaste = findViewById(R.id.scannerPaste);
         mButtonPaste.setOnClickListener(this);
 
-        mButtonHelp = findViewById(R.id.scannerHelp);
-        mButtonHelp.setOnClickListener(this);
+        //mButtonHelp = findViewById(R.id.scannerHelp);
+        //mButtonHelp.setOnClickListener(this);
 
         mBtnFlashlight = findViewById(R.id.scannerFlashButton);
         mBtnFlashlight.setOnClickListener(this);
@@ -109,9 +109,9 @@ public abstract class BaseScannerActivity extends BaseAppCompatActivity implemen
             case R.id.scannerPaste:
                 onButtonPasteClick();
                 break;
-            case R.id.scannerHelp:
-                onButtonHelpClick();
-                break;
+            //case R.id.scannerHelp:
+            //    onButtonHelpClick();
+            //    break;
             case R.id.scannerFlashButton:
                 onButtonFlashClick();
                 break;

@@ -101,10 +101,10 @@
         android:title="@string/settings_category_help"
         app:iconSpaceReserved="false">
 
-        <Preference
+        <!--Preference
             android:key="help"
             android:title="@string/settings_help"
-            app:iconSpaceReserved="false" />
+            app:iconSpaceReserved="false" /-->
 
         <Preference
             android:key="reportIssue"

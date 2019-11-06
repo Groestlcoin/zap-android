@@ -254,7 +254,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
         });
 
         // Action when clicked on "need help"
-        final Preference prefHelp = findPreference("help");
+        /*final Preference prefHelp = findPreference("help");
         prefHelp.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
@@ -263,14 +263,14 @@ public class SettingsFragment extends PreferenceFragmentCompat {
                 getActivity().startActivity(browserIntent);
                 return true;
             }
-        });
+        });*/
 
         // Action when clicked on "reportBug"
         final Preference prefIssue = findPreference("reportIssue");
         prefIssue.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
-                String url = "https://github.com/LN-Zap/zap-android/issues";
+                String url = "https://github.com/Groestlcoin/zap-android/issues";
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
                 getActivity().startActivity(browserIntent);
                 return true;
