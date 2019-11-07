@@ -11,6 +11,9 @@ buildscript {
 
         // Needed for gRPC
         classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.10'
+        classpath('fr.avianey.androidsvgdrawable:gradle-plugin:3.0.2') {
+            exclude group: 'xerces'
+        }
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
