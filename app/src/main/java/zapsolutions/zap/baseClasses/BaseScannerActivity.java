@@ -36,7 +36,7 @@ public abstract class BaseScannerActivity extends BaseAppCompatActivity implemen
     private ImageButton mBtnFlashlight;
     private TextView mTvPermissionRequired;
     private Button mButtonPaste;
-    private Button mButtonHelp;
+    //private Button mButtonHelp;
 
     @Override
     public void onCreate(Bundle state) {
@@ -196,7 +196,7 @@ public abstract class BaseScannerActivity extends BaseAppCompatActivity implemen
     }
 
     protected void showButtonHelp() {
-        mButtonHelp.setVisibility(View.VISIBLE);
+        //mButtonHelp.setVisibility(View.VISIBLE);
     }
 
 }
