@@ -1,12 +1,15 @@
 package zapsolutions.zap.channelManagement;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.RecyclerView;
+
 import zapsolutions.zap.R;
 import zapsolutions.zap.lightning.LightningNodeUri;
 import zapsolutions.zap.util.DownloadImageTask;
@@ -22,10 +25,12 @@ public class LightningNodeRecyclerAdapter extends RecyclerView.Adapter<Lightning
     private List<LightningNodeUri> mLightningNodesList;
     private ExecutorService mExecutors = Executors.newFixedThreadPool(5);
     private LightningNodeSelectedListener mLightningNodeSelectedListener;
+    private Context context;
 
-    public LightningNodeRecyclerAdapter(List<LightningNodeUri> list, LightningNodeSelectedListener lightningNodeSelectedListener) {
+    public LightningNodeRecyclerAdapter(List<LightningNodeUri> list, LightningNodeSelectedListener lightningNodeSelectedListener, Context context) {
         mLightningNodesList = list;
         mLightningNodeSelectedListener = lightningNodeSelectedListener;
+        this.context = context;
     }
 
     @NonNull
@@ -47,7 +52,10 @@ public class LightningNodeRecyclerAdapter extends RecyclerView.Adapter<Lightning
         holder.nickname.setText(lightningNode.getNickname());
 
         if (lightningNode.getImage() != null && !lightningNode.getImage().isEmpty()) {
-            new DownloadImageTask(new WeakReference<>(holder.image)).executeOnExecutor(mExecutors, lightningNode.getImage());
+            if(lightningNode.getImage().contains("R.")) {
+                holder.image.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), R.drawable.ic_cloudlightning, null));
+            }
+            else new DownloadImageTask(new WeakReference<>(holder.image)).executeOnExecutor(mExecutors, lightningNode.getImage());
         }
 
         holder.itemView.setOnClickListener(new OnSingleClickListener() {
