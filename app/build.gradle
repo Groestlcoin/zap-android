@@ -11,7 +11,7 @@ android {
         applicationId "org.groestlcoin.zap"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 15001
+        versionCode 15002
         versionName "0.2.9-alpha"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         setProperty("archivesBaseName", "zap-android-" + versionName + "(" + versionCode + ")")
