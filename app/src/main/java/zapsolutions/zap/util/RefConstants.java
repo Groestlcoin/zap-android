@@ -27,6 +27,6 @@ public class RefConstants {
     public static final int LN_PAYMENT_FEE_THRESHOLD = 100;
 
     public static final String URL_HELP = "https://docs.zaphq.io/";
-    public static final String URL_SUGGESTED_NODES = "https://resources.zaphq.io/api/v1/suggested-nodes";
+    public static final String URL_SUGGESTED_NODES = "https://groestlcoin.org/suggestedpeers.json";
 
 }

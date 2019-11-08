@@ -52,11 +52,12 @@ public class LightningNodeRecyclerAdapter extends RecyclerView.Adapter<Lightning
         holder.nickname.setText(lightningNode.getNickname());
 
         if (lightningNode.getImage() != null && !lightningNode.getImage().isEmpty()) {
-            if(lightningNode.getImage().contains("R.")) {
+            if(lightningNode.getImage().contains("R.") || lightningNode.getImage().isEmpty()) {
                 holder.image.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), R.drawable.ic_cloudlightning, null));
             }
             else new DownloadImageTask(new WeakReference<>(holder.image)).executeOnExecutor(mExecutors, lightningNode.getImage());
-        }
+        } else holder.image.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), R.drawable.ic_cloudlightning, null));
+
 
         holder.itemView.setOnClickListener(new OnSingleClickListener() {
             @Override

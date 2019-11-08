@@ -61,7 +61,7 @@ public class ScanNodePubKeyActivity extends BaseScannerActivity implements Light
 
         showCameraWithPermissionRequest();
 
-        getSuggestedPeersGRS();
+        getSuggestedPeers();
     }
 
     public void getSuggestedPeers() {
@@ -94,8 +94,9 @@ public class ScanNodePubKeyActivity extends BaseScannerActivity implements Light
                         updateSuggestedNodes();
                     } catch (JSONException e) {
                         ZapLog.debug(LOG_TAG, "Could not parse suggested peers: " + e.getMessage());
+                        getSuggestedPeersGRS();
                     }
-                }, error -> ZapLog.debug(LOG_TAG, "Could not fetch suggested peers: " + error.getMessage()));
+                }, error -> getSuggestedPeersGRS()/* ZapLog.debug(LOG_TAG, "Could not fetch suggested peers: " + error.getMessage())*/);
 
         HttpClient.getInstance().addToRequestQueue(suggestedPeersRequest, "SuggestedPeers");
     }
